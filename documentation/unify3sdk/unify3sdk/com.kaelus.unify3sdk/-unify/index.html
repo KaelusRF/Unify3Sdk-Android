@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Unify</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    unify3sdk
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":unify3sdk:dokkaHtml/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":unify3sdk:dokkaHtml/release"
+                                       data-filter=":unify3sdk:dokkaHtml/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    unify3sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="unify3sdk::com.kaelus.unify3sdk/Unify///PointingToDeclaration//-1544018806">
+  <div class="breadcrumbs"><a href="../../../index.html">unify3sdk</a><span class="delimiter">/</span><a href="../index.html">com.kaelus.unify3sdk</a><span class="delimiter">/</span><span class="current">Unify</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Unify</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Unify</a></div><p class="paragraph">The main unify interface</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-198785861%2FClasslikes%2F-1544018806" anchor-label="Companion" id="-198785861%2FClasslikes%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-198785861%2FClasslikes%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-608563682%2FClasslikes%2F-1544018806" anchor-label="Observer_" id="-608563682%2FClasslikes%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-observer_/index.html"><span>Observer_</span><wbr></wbr></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-608563682%2FClasslikes%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-observer_/index.html">Observer_</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1099663922%2FFunctions%2F-1544018806" anchor-label="addNetworkInstrument" id="1099663922%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-network-instrument.html"><span>add</span><wbr></wbr><span>Network</span><wbr></wbr><span><span>Instrument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1099663922%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="add-network-instrument.html"><span class="token function">addNetworkInstrument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">host<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-connection-result/index.html">ConnectionResult</a></div><div class="brief "><p class="paragraph">Add a network instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1437978690%2FFunctions%2F-1544018806" anchor-label="configureCalibration" id="1437978690%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configure-calibration.html"><span>configure</span><wbr></wbr><span><span>Calibration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1437978690%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="configure-calibration.html"><span class="token function">configureCalibration</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">calibration<span class="token operator">: </span><a href="../-calibration/index.html">Calibration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-calibration-configuration-result/index.html">CalibrationConfigurationResult</a></div><div class="brief "><p class="paragraph">Configure the calibration</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1840628054%2FFunctions%2F-1544018806" anchor-label="configureOverlaySet" id="-1840628054%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configure-overlay-set.html"><span>configure</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1840628054%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="configure-overlay-set.html"><span class="token function">configureOverlaySet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">overlaySet<span class="token operator">: </span><a href="../-overlay-set/index.html">OverlaySet</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-overlay-set-configuration-result/index.html">OverlaySetConfigurationResult</a></div><div class="brief "><p class="paragraph">Configure the overlay set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="719736514%2FFunctions%2F-1544018806" anchor-label="configureReport" id="719736514%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configure-report.html"><span>configure</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="719736514%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="configure-report.html"><span class="token function">configureReport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reportConfiguration<span class="token operator">: </span><a href="../-report-configuration/index.html">ReportConfiguration</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configure the report.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1062488534%2FFunctions%2F-1544018806" anchor-label="configureTest" id="-1062488534%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configure-test.html"><span>configure</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1062488534%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="configure-test.html"><span class="token function">configureTest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">test<span class="token operator">: </span><a href="../-test/index.html">Test</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-test-configuration-result/index.html">TestConfigurationResult</a></div><div class="brief "><p class="paragraph">Configure the test</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-492707647%2FFunctions%2F-1544018806" anchor-label="connectInstrument" id="-492707647%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connect-instrument.html"><span>connect</span><wbr></wbr><span><span>Instrument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-492707647%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="connect-instrument.html"><span class="token function">connectInstrument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-connection-result/index.html">ConnectionResult</a></div><div class="brief "><p class="paragraph">Connect to an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1658631809%2FFunctions%2F-1544018806" anchor-label="disconnectInstrument" id="1658631809%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disconnect-instrument.html"><span>disconnect</span><wbr></wbr><span><span>Instrument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1658631809%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="disconnect-instrument.html"><span class="token function">disconnectInstrument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disconnect an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="544262589%2FFunctions%2F-1544018806" anchor-label="getBatchedOverlayResults" id="544262589%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-batched-overlay-results.html"><span>get</span><wbr></wbr><span>Batched</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="544262589%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-batched-overlay-results.html"><span class="token function">getBatchedOverlayResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-overlay-result/index.html">OverlayResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get batched overlay results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-686213581%2FFunctions%2F-1544018806" anchor-label="getBatchedTestResults" id="-686213581%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-batched-test-results.html"><span>get</span><wbr></wbr><span>Batched</span><wbr></wbr><span>Test</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-686213581%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-batched-test-results.html"><span class="token function">getBatchedTestResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-batched-test-result/index.html">BatchedTestResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get batched test results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2130711121%2FFunctions%2F-1544018806" anchor-label="getInstrumentBatteryState" id="2130711121%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-battery-state.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span>Battery</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2130711121%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-battery-state.html"><span class="token function">getInstrumentBatteryState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-battery-state/index.html">BatteryState</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get battery state updates for an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-617227692%2FFunctions%2F-1544018806" anchor-label="getInstrumentConnectionState" id="-617227692%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-connection-state.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span>Connection</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-617227692%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-connection-state.html"><span class="token function">getInstrumentConnectionState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-connection-state/index.html">ConnectionState</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get connection state updates for an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1328599200%2FFunctions%2F-1544018806" anchor-label="getInstrumentDefinition" id="-1328599200%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-definition.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span><span>Definition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1328599200%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-definition.html"><span class="token function">getInstrumentDefinition</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-instrument-definition/index.html">InstrumentDefinition</a></div><div class="brief "><p class="paragraph">Get the instrument definition for a serial number.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1860431651%2FFunctions%2F-1544018806" anchor-label="getInstrumentDefinitions" id="1860431651%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-definitions.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span><span>Definitions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1860431651%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-definitions.html"><span class="token function">getInstrumentDefinitions</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-instrument-definition/index.html">InstrumentDefinition</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the available instrument definitions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1311962235%2FFunctions%2F-1544018806" anchor-label="getInstrumentIsSoundOn" id="-1311962235%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-is-sound-on.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span>Is</span><wbr></wbr><span>Sound</span><wbr></wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1311962235%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-is-sound-on.html"><span class="token function">getInstrumentIsSoundOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get sound state updates for an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1496595754%2FFunctions%2F-1544018806" anchor-label="getInstrumentModel" id="1496595754%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-model.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1496595754%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-model.html"><span class="token function">getInstrumentModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get model updates for an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-358123366%2FFunctions%2F-1544018806" anchor-label="getInstrumentRtfState" id="-358123366%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instrument-rtf-state.html"><span>get</span><wbr></wbr><span>Instrument</span><wbr></wbr><span>Rtf</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-358123366%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-instrument-rtf-state.html"><span class="token function">getInstrumentRtfState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-rtf-state/index.html">RtfState</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get RTF state updates for an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="78580399%2FFunctions%2F-1544018806" anchor-label="getLogs" id="78580399%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-logs.html"><span>get</span><wbr></wbr><span><span>Logs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="78580399%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-logs.html"><span class="token function">getLogs</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-log/index.html">Log</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get the log stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2043784051%2FFunctions%2F-1544018806" anchor-label="getRealtimeOverlayResults" id="-2043784051%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-realtime-overlay-results.html"><span>get</span><wbr></wbr><span>Realtime</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2043784051%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-realtime-overlay-results.html"><span class="token function">getRealtimeOverlayResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-overlay-result/index.html">OverlayResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get realtime overlay results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1942741661%2FFunctions%2F-1544018806" anchor-label="getRealtimeTestResults" id="-1942741661%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-realtime-test-results.html"><span>get</span><wbr></wbr><span>Realtime</span><wbr></wbr><span>Test</span><wbr></wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1942741661%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-realtime-test-results.html"><span class="token function">getRealtimeTestResults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-realtime-test-result/index.html">RealtimeTestResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get realtime test results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2138292383%2FFunctions%2F-1544018806" anchor-label="getReportLogo" id="2138292383%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-report-logo.html"><span>get</span><wbr></wbr><span>Report</span><wbr></wbr><span><span>Logo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2138292383%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-report-logo.html"><span class="token function">getReportLogo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the report logo.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="254501352%2FFunctions%2F-1544018806" anchor-label="getTestContexts" id="254501352%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-test-contexts.html"><span>get</span><wbr></wbr><span>Test</span><wbr></wbr><span><span>Contexts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="254501352%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-test-contexts.html"><span class="token function">getTestContexts</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-test-context/index.html">TestContext</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get test contexts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1104929915%2FFunctions%2F-1544018806" anchor-label="identifyInstrument" id="1104929915%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="identify-instrument.html"><span>identify</span><wbr></wbr><span><span>Instrument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1104929915%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="identify-instrument.html"><span class="token function">identifyInstrument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Display identification text on an instrument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1058249124%2FFunctions%2F-1544018806" anchor-label="mergeReport" id="-1058249124%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="merge-report.html"><span>merge</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1058249124%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="merge-report.html"><span class="token function">mergeReport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Merge a report from disk into the current report.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1957968640%2FFunctions%2F-1544018806" anchor-label="newReport" id="1957968640%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="new-report.html"><span>new</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1957968640%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="new-report.html"><span class="token function">newReport</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Create a new report.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1873990276%2FFunctions%2F-1544018806" anchor-label="openReport" id="-1873990276%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-report.html"><span>open</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1873990276%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="open-report.html"><span class="token function">openReport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Open a report from disk.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-118345531%2FFunctions%2F-1544018806" anchor-label="printReportToPdf" id="-118345531%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="print-report-to-pdf.html"><span>print</span><wbr></wbr><span>Report</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Pdf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-118345531%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="print-report-to-pdf.html"><span class="token function">printReportToPdf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">orientation<span class="token operator">: </span><a href="../-orientation/index.html">Orientation</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Print the report to a PDF file.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1146372864%2FFunctions%2F-1544018806" anchor-label="printTraceToPng" id="-1146372864%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="print-trace-to-png.html"><span>print</span><wbr></wbr><span>Trace</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Png</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1146372864%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="print-trace-to-png.html"><span class="token function">printTraceToPng</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">traceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Print a trace to a PNG file.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="987476175%2FFunctions%2F-1544018806" anchor-label="recordImage" id="987476175%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="record-image.html"><span>record</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="987476175%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="record-image.html"><span class="token function">recordImage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Record an image in the report.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1804947823%2FFunctions%2F-1544018806" anchor-label="recordTrace" id="-1804947823%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="record-trace.html"><span>record</span><wbr></wbr><span><span>Trace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1804947823%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="record-trace.html"><span class="token function">recordTrace</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">traceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">location<span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Record a trace in the report.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1009413466%2FFunctions%2F-1544018806" anchor-label="runBluetoothScan" id="-1009413466%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-bluetooth-scan.html"><span>run</span><wbr></wbr><span>Bluetooth</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1009413466%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="run-bluetooth-scan.html"><span class="token function">runBluetoothScan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Run a Bluetooth scan.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1001941785%2FFunctions%2F-1544018806" anchor-label="runCalibration" id="-1001941785%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-calibration.html"><span>run</span><wbr></wbr><span><span>Calibration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1001941785%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="run-calibration.html"><span class="token function">runCalibration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-calibration-state/index.html">CalibrationState</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Run the calibration</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="262298217%2FFunctions%2F-1544018806" anchor-label="runCalibrationStep" id="262298217%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-calibration-step.html"><span>run</span><wbr></wbr><span>Calibration</span><wbr></wbr><span><span>Step</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="262298217%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="run-calibration-step.html"><span class="token function">runCalibrationStep</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stepId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Run the calibration step</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="786130472%2FFunctions%2F-1544018806" anchor-label="runInstrumentDiscovery" id="786130472%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-instrument-discovery.html"><span>run</span><wbr></wbr><span>Instrument</span><wbr></wbr><span><span>Discovery</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="786130472%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="run-instrument-discovery.html"><span class="token function">runInstrumentDiscovery</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-instrument/index.html">Instrument</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Run instrument discovery.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="685453596%2FFunctions%2F-1544018806" anchor-label="runTest" id="685453596%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-test.html"><span>run</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="685453596%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="run-test.html"><span class="token function">runTest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">checkRl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="../-test-progress/index.html">TestProgress</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Run the test</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1989740591%2FFunctions%2F-1544018806" anchor-label="saveReport" id="1989740591%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save-report.html"><span>save</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1989740591%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="save-report.html"><span class="token function">saveReport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Save the report to disk.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1653969301%2FFunctions%2F-1544018806" anchor-label="setInstrumentIsSoundOn" id="-1653969301%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-instrument-is-sound-on.html"><span>set</span><wbr></wbr><span>Instrument</span><wbr></wbr><span>Is</span><wbr></wbr><span>Sound</span><wbr></wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653969301%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-instrument-is-sound-on.html"><span class="token function">setInstrumentIsSoundOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">on<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enable or disable the sound on the instrument</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-823054340%2FFunctions%2F-1544018806" anchor-label="setLogLevels" id="-823054340%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-log-levels.html"><span>set</span><wbr></wbr><span>Log</span><wbr></wbr><span><span>Levels</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823054340%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-log-levels.html"><span class="token function">setLogLevels</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">minLevel<span class="token operator">: </span><a href="../-log-level/index.html">LogLevel</a><span class="token punctuation">, </span></span><span class="parameter ">maxLevel<span class="token operator">: </span><a href="../-log-level/index.html">LogLevel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the minimum and maximum log levels.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="155263282%2FFunctions%2F-1544018806" anchor-label="setReportLogo" id="155263282%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-report-logo.html"><span>set</span><wbr></wbr><span>Report</span><wbr></wbr><span><span>Logo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="155263282%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-report-logo.html"><span class="token function">setReportLogo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the report logo.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2061774037%2FFunctions%2F-1544018806" anchor-label="stopBluetoothScan" id="-2061774037%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-bluetooth-scan.html"><span>stop</span><wbr></wbr><span>Bluetooth</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2061774037%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="stop-bluetooth-scan.html"><span class="token function">stopBluetoothScan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop the Bluetooth scan.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-927059284%2FFunctions%2F-1544018806" anchor-label="stopCalibration" id="-927059284%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-calibration.html"><span>stop</span><wbr></wbr><span><span>Calibration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-927059284%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="stop-calibration.html"><span class="token function">stopCalibration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop the running calibration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1281521216%2FFunctions%2F-1544018806" anchor-label="stopCalibrationStep" id="-1281521216%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-calibration-step.html"><span>stop</span><wbr></wbr><span>Calibration</span><wbr></wbr><span><span>Step</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1281521216%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="stop-calibration-step.html"><span class="token function">stopCalibrationStep</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop the running calibration step.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1141138418%2FFunctions%2F-1544018806" anchor-label="stopTest" id="1141138418%2FFunctions%2F-1544018806" data-filterable-set=":unify3sdk:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":unify3sdk:dokkaHtml/release" data-filterable-set=":unify3sdk:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-test.html"><span>stop</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1141138418%2FFunctions%2F-1544018806"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="stop-test.html"><span class="token function">stopTest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop the running test.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,25 +1,5 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:com.kaelus.unify3sdk.impl////PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/index.html
-$dokka.location:com.kaelus.unify3sdk.impl//getBoolean/kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-boolean.html
-$dokka.location:com.kaelus.unify3sdk.impl//getBoolean/kotlin.String#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-boolean.html
-$dokka.location:com.kaelus.unify3sdk.impl//getGuid/kotlin.String#kotlin.String#java.util.UUID/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-guid.html
-$dokka.location:com.kaelus.unify3sdk.impl//getGuid/kotlin.String#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-guid.html
-$dokka.location:com.kaelus.unify3sdk.impl//getInt/kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-int.html
-$dokka.location:com.kaelus.unify3sdk.impl//getInt/kotlin.String#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-int.html
-$dokka.location:com.kaelus.unify3sdk.impl//getString/kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-string.html
-$dokka.location:com.kaelus.unify3sdk.impl//getString/kotlin.String#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/get-string.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants///PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/index.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/CccDescriptorUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-ccc-descriptor-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/DeviceInformationServiceUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-device-information-service-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/DeviceSerialNumberChUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-device-serial-number-ch-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/IvaSerialServiceUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-iva-serial-service-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/IwaSerialServiceUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-iwa-serial-service-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/RxCharacteristicUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-rx-characteristic-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/GattConstants/TxCharacteristicUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-gatt-constants/-tx-characteristic-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/RfcommConstants///PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-rfcomm-constants/index.html
-$dokka.location:com.kaelus.unify3sdk.impl/RfcommConstants/IvaServiceUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-rfcomm-constants/-iva-service-uuid.html
-$dokka.location:com.kaelus.unify3sdk.impl/RfcommConstants/SppServiceUuid/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk.impl/-rfcomm-constants/-spp-service-uuid.html
 $dokka.location:com.kaelus.unify3sdk////PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk/index.html
 $dokka.location:com.kaelus.unify3sdk/BatchedTestResult///PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk/-batched-test-result/index.html
 $dokka.location:com.kaelus.unify3sdk/BatchedTestResult/BatchedTestResult/#kotlin.Int#kotlin.collections.List[com.kaelus.unify3sdk.Point]/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk/-batched-test-result/-batched-test-result.html
@@ -1919,4 +1899,3 @@ $dokka.location:com.kaelus.unify3sdk/ValueMarkerValidationErrorType/entries/#/Po
 $dokka.location:com.kaelus.unify3sdk/ValueMarkerValidationErrorType/valueOf/#kotlin.String/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk/-value-marker-validation-error-type/value-of.html
 $dokka.location:com.kaelus.unify3sdk/ValueMarkerValidationErrorType/values/#/PointingToDeclaration/unify3sdk/com.kaelus.unify3sdk/-value-marker-validation-error-type/values.html
 com.kaelus.unify3sdk
-com.kaelus.unify3sdk.impl

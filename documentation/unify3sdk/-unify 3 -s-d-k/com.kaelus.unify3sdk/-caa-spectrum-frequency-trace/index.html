@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CaaSpectrumFrequencyTrace</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<link href="../../../images/logo-icon.svg">
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Unify 3 SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":unify3sdk/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":unify3sdk/release"
+                                       data-filter=":unify3sdk/release"/>
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Unify 3 SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Unify 3 SDK::com.kaelus.unify3sdk/CaaSpectrumFrequencyTrace///PointingToDeclaration//-822078432">
+  <div class="breadcrumbs"><a href="../../../index.html">Unify 3 SDK</a><span class="delimiter">/</span><a href="../index.html">com.kaelus.unify3sdk</a><span class="delimiter">/</span><span class="current">CaaSpectrumFrequencyTrace</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Caa</span><wbr></wbr><span>Spectrum</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Trace</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CaaSpectrumFrequencyTrace</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>frequencyUnit<span class="token operator">: </span><a href="../-frequency-unit/index.html">FrequencyUnit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>powerUnit<span class="token operator">: </span><a href="../-power-unit/index.html">PowerUnit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>instrumentSerialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>instrumentModel<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>frequencyRangeHz<span class="token operator">: </span><a href="../-extent/index.html">Extent</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>numberOfPoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>preampMode<span class="token operator">: </span><a href="../-caa-preamp-mode/index.html">CaaPreampMode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>durationS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span> : <a href="../-trace/index.html">Trace</a></div><p class="paragraph">A CAA spectrum frequency trace.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-1650872839%2FConstructors%2F-822078432" anchor-label="CaaSpectrumFrequencyTrace" id="-1650872839%2FConstructors%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-caa-spectrum-frequency-trace.html"><span>Caa</span><wbr></wbr><span>Spectrum</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Trace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1650872839%2FConstructors%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">frequencyUnit<span class="token operator">: </span><a href="../-frequency-unit/index.html">FrequencyUnit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">powerUnit<span class="token operator">: </span><a href="../-power-unit/index.html">PowerUnit</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">instrumentSerialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">instrumentModel<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">frequencyRangeHz<span class="token operator">: </span><a href="../-extent/index.html">Extent</a><span class="token punctuation">, </span></span><span class="parameter ">numberOfPoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">preampMode<span class="token operator">: </span><a href="../-caa-preamp-mode/index.html">CaaPreampMode</a><span class="token punctuation">, </span></span><span class="parameter ">durationS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1721337851%2FProperties%2F-822078432" anchor-label="durationS" id="1721337851%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="duration-s.html"><span>duration</span><wbr></wbr><span><span>S</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1721337851%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="duration-s.html">durationS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The duration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1139231609%2FProperties%2F-822078432" anchor-label="enabled" id="1139231609%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enabled.html"><span><span>enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1139231609%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="enabled.html">enabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Whether the trace is enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1144403539%2FProperties%2F-822078432" anchor-label="frequencyRangeHz" id="-1144403539%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frequency-range-hz.html"><span>frequency</span><wbr></wbr><span>Range</span><wbr></wbr><span><span>Hz</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1144403539%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="frequency-range-hz.html">frequencyRangeHz</a><span class="token operator">: </span><a href="../-extent/index.html">Extent</a></div><div class="brief "><p class="paragraph">The frequency range.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="934812890%2FProperties%2F-822078432" anchor-label="frequencyUnit" id="934812890%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frequency-unit.html"><span>frequency</span><wbr></wbr><span><span>Unit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="934812890%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="frequency-unit.html">frequencyUnit</a><span class="token operator">: </span><a href="../-frequency-unit/index.html">FrequencyUnit</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The frequency unit.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1522070267%2FProperties%2F-822078432" anchor-label="id" id="-1522070267%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1522070267%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The identifier.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1728267608%2FProperties%2F-822078432" anchor-label="instrumentModel" id="1728267608%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instrument-model.html"><span>instrument</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1728267608%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="instrument-model.html">instrumentModel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The instrument model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="962882268%2FProperties%2F-822078432" anchor-label="instrumentSerialNumber" id="962882268%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instrument-serial-number.html"><span>instrument</span><wbr></wbr><span>Serial</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="962882268%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="instrument-serial-number.html">instrumentSerialNumber</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The instrument serial number.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-59145571%2FProperties%2F-822078432" anchor-label="numberOfPoints" id="-59145571%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="number-of-points.html"><span>number</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Points</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-59145571%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="number-of-points.html">numberOfPoints</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of points.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1067637841%2FProperties%2F-822078432" anchor-label="powerUnit" id="1067637841%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="power-unit.html"><span>power</span><wbr></wbr><span><span>Unit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1067637841%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="power-unit.html">powerUnit</a><span class="token operator">: </span><a href="../-power-unit/index.html">PowerUnit</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The power unit.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="467089852%2FProperties%2F-822078432" anchor-label="preampMode" id="467089852%2FProperties%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preamp-mode.html"><span>preamp</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="467089852%2FProperties%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="preamp-mode.html">preampMode</a><span class="token operator">: </span><a href="../-caa-preamp-mode/index.html">CaaPreampMode</a></div><div class="brief "><p class="paragraph">The preamp mode.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1823017983%2FFunctions%2F-822078432" anchor-label="equals" id="-1823017983%2FFunctions%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1823017983%2FFunctions%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this instance is equal to <a href="equals.html">other</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1381466053%2FFunctions%2F-822078432" anchor-label="hashCode" id="1381466053%2FFunctions%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1381466053%2FFunctions%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns a hash code value for this instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1203299988%2FFunctions%2F-822078432" anchor-label="toString" id="1203299988%2FFunctions%2F-822078432" data-filterable-set=":unify3sdk/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":unify3sdk/release" data-filterable-set=":unify3sdk/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1203299988%2FFunctions%2F-822078432"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":unify3sdk/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a string representation of this instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) Kaelus</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,1 +1,1 @@
-sourceset_dependencies='{":unify3sdk:dokkaHtml/debug":[],":unify3sdk:dokkaHtml/main":[],":unify3sdk:dokkaHtml/release":[]}'
+sourceset_dependencies='{":unify3sdk/release":[]}'

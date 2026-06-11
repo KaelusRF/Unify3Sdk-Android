@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unify3SdkExample</string>
+    <string name="main_menu_title">Unify 3 SDK Examples</string>
+    <string name="main_menu_subtitle">Choose an example workflow:</string>
+    <string name="return_loss_example_title">Return Loss Test Example</string>
+    <string name="osl_calibration_example_title">OSL Calibration Example</string>
+    <string name="back_to_examples">Back to Examples</string>
+    <string name="open_return_loss_example">Open Return Loss Test Example</string>
+    <string name="open_osl_calibration_example">Open OSL Calibration Example</string>
+    <string name="main_menu_return_loss_button">Return Loss Test Example</string>
+    <string name="main_menu_osl_button">OSL Calibration Example</string>
+    <string name="discover_instrument">1) Discover Instrument</string>
+    <string name="connect_instrument">2) Connect</string>
+    <string name="run_return_loss_test">3) Run Return Loss Test</string>
+    <string name="prepare_calibration">3) Prepare Calibration</string>
+    <string name="run_next_step">4) Run Next Step</string>
+    <string name="run_named_step">4) Run %1$s Step</string>
+</resources>

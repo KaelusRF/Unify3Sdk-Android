@@ -11,9 +11,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url = uri(File(settingsDir, "../../../build/release/0.1.0/repo"))
-        }
     }
 }
 
